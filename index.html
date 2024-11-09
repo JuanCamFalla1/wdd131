@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wdd 131</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content=" width=device-width, initial—scale= 1.0" >
+    <title> Juan Falla | WDD 131</title>
+    <meta name="description" content=" Index Website, defined to be a practice Space" >
+    <meta name="author" content="Juan Falla">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script defer src="scripts/getdates.js"></script>
 </head>
-<body>
-    <h1>WDD 131 - Juan Falla</h1>
+<body>    
+    <header>
+        <div class="head">
+            <h1>
+                WDD 131 - Dynamic Web Fundamentals - <span>Juan C. Falla</span> 
+            </h1>
+        </div>
+        <nav class="nav">    
+            <a href="https://bo.linkedin.com/">LinkedIn</a>
+            <a href="https://byui.instructure.com/">I-learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/23?lang=eng#:~:text=6%20And%20as,did%20fall%20away.">Scripture</a>
+            <a href="">Final Project</a>
+            <link rel="stylesheet" href="styles/base.css">
+        </nav>
+    </header>
+    <main>
+
+        <div class="card">
+            <div class="card-header">
+                About Me
+            </div>   
+            <div class="card-grid"> 
+                <div class="grid-item1">
+                    <p>My name is juan Camilo i like to be called camilo, currently living in bolivia but i'm a Colombian, my hobbies can be playing the piano, hearing music, taking pictures, and practicing coding. </p>
+                </div>
+                <div class="grid-item2">
+                    <img class="image1" src="images/profile-picture.jpg" alt="profile-picture">
+                </div>
+                <div class="grid-item3"><h3>Bolivia, Cochabamba</h3> <hr> </div>
+                
+                <div class="grid-item4">
+                    <img class="image1" src="images/bolivian-flag.png" alt="bolivian-flag">
+                    <p>Bolivian flag</p>
+                </div>
+                <div class="grid-item5">
+                    <p>Cochabamba lies in a valley of fertile and productive land at an altitude of 2,558 meters (8,392 feet). Surrounded by cultivated fields and valuable pre-Inca and Inca remains, the city preserves its viceregal character while establishing itself as an important agricultural, manufacturing, commercial, and industrial center.</p>
+                </div>
+                
+                
+            </div>         
+        </div>
+
+
+        <div  class="card" >
+            <div class="card-header">
+                Web Dev Resources 
+            </div>
+            <div class="card-body" class="second-body">
+                <ul >
+                    <li><a href="https://www.youtube.com/watch?v=DiSvq5SgLMI&ab_channel=DaniKrossing">Youtube CSS</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript">Java Script</a></li>
+                    <li><a href="https://byui-cse.github.io/wdd131-ww-course/week01/assignment-01.html">Byu Training</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> 😁 Juan Camilo Falla Chavez 😁 Bolivia</p>
+        <p class="color"> <span id="lastModified"></span> </p>
+    </footer>
 </body>
+      <!-- 08 11 2024 -->
 </html>
