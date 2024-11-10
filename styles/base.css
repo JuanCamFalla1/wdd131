@@ -118,7 +118,6 @@ main {
     display: grid;
     height: 27.8rem;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1fr 30px 1fr);
     gap: 10px;
     
     
