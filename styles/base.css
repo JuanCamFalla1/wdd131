@@ -92,6 +92,10 @@ main {
     border-top-right-radius: 5px;
     
 }
+.card-header h2 {
+    font-size: 95%;
+}
+
 
 .card-body {
     padding: 12px;
