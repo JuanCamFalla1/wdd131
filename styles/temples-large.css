@@ -1,0 +1,82 @@
+
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+    header, main, footer {
+        max-width: 840px;
+        margin: 0 auto;        
+    }
+
+
+
+header {
+    display: flex;
+    background-color:  rgb(60, 10, 100);;
+        
+}
+        /* main design*/
+
+    main div {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin: 15px;
+        
+    }
+
+    main h2 {
+        text-align: center;
+        
+        
+    }
+
+    main div figure {
+        flex: 1 1 calc(33.333% - 20px);
+        
+    }
+
+    main div figure img {
+        max-width: 100% ;
+    }
+
+    main div figure figcaption{
+        text-align: center;
+        color: rgb(60, 10, 100);
+    }
+
+
+	h1 {
+		font-size: 2.5rem;
+		margin-left: 0;
+		text-align: left;
+        
+	}
+
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction:row;
+        margin-left: auto;
+        
+        
+	}
+
+	.navigation a {
+        padding-top: 1.8rem;
+		display: block;        
+		flex: 1 1 100%;
+	}
+
+	.stuff {
+		margin: 1rem auto;
+	}
+}
