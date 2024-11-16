@@ -15,27 +15,18 @@ header {
 }
         /* main design*/
 
+    main h2 {
+        text-align: center;        
+    }
+
     main div {
-        display:flex;
-        flex-direction: row;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
         align-items: center;
         gap: 8px;
-        flex-wrap: wrap;
-        margin: 15px;
-        
-    }
-
-    main h2 {
-        text-align: center;
-        
-        
-    }
-
-    main div figure {
-        flex: 1 1 calc(33.333% - 20px);
-        
-    }
+        margin: 15px;        
+    }       
 
     main div figure img {
         max-width: 100% ;
@@ -45,6 +36,9 @@ header {
         text-align: center;
         color: rgb(60, 10, 100);
     }
+
+
+
 
 
 	h1 {
