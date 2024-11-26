@@ -1,0 +1,181 @@
+:root {
+    --the-font: "Roboto", sans-serif;
+    --the-color:rgb(133, 21, 41);
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--the-font);
+	width: 500px;
+    margin: 0 auto;
+}
+
+
+
+header {
+    background-color:var(--the-color);
+    color: #eee;
+    height: 10rem;    
+    text-align: center;
+    font-size: 2.5rem;
+
+}
+header h1 {
+    width: 80%;
+    text-align: center;
+    padding-top: 1.8rem;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+th, td {
+    border: none;
+    padding: 8px;
+    text-align: left;
+}
+
+.data {
+    text-align: right;
+    font-weight: bold;
+}
+
+
+th {
+    background-color: white;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+
+
+.icon {
+    width: 8rem;
+}
+
+/* footer information  */
+footer {
+    padding-top: 1rem;
+    height: 6rem;
+    color: #eee;
+    background-color:var(--the-color);    
+    text-align: center;
+    
+}
+.color {
+    
+    font-size: 90%;
+}
+
+
+
+
+
+
+@media (min-width: 46.875rem) {
+    * {        
+        width: 1500px;
+    }
+    
+    main {
+        margin-top: 4px;
+        
+        
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }   
+    
+    .table1 {
+        position: absolute;
+        z-index: 1;
+        top: 13rem;
+        left: 30px;
+    }
+    .table2 {
+        position: absolute;
+        z-index: 1;
+        top:30rem;
+        right: 30px;
+    }
+    
+    .weather {
+        position: relative; /* Necessary for absolute positioning of the icon */
+      }
+    
+      .icon {
+        display: none;
+    }
+
+    .weather::after {
+        content:"🌥️"; /* Replace with your icon path */
+        position: absolute;
+        top: 50%; /* Adjust as needed */
+        right: 20px; /* Adjust as needed */
+        transform: translateY(-50%); /* Center vertically */
+        
+    }
+
+
+
+    .data-table {
+        width:325px;
+        background-color: rgba(240, 240, 240,0.8);
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+               
+    }
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    footer {
+        font-size: 1.5rem;
+    }
+
+    
+
+}
