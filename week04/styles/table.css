@@ -27,7 +27,7 @@ table {
     border: thin solid var(--border);
     box-shadow: 0 0 10px var(--shadow);
     border-collapse: collapse;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     margin-top: 10vh;
 }
 
