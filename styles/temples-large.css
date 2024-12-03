@@ -1,8 +1,8 @@
 
 /* large view navigation ************************************/
-@media (min-width: 37.5em) {
+@media (min-width: 90em) {
     header, main, footer {
-        max-width: 840px;
+        max-width: 2500px;
         margin: 0 auto;        
     }
 
@@ -19,22 +19,11 @@ header {
         text-align: center;        
     }
 
-    main div {
-        display:grid;
+    .temple-container {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-        margin: 15px;        
-    }       
-
-    main div figure img {
-        max-width: 100% ;
-    }
-
-    main div figure figcaption{
-        text-align: center;
-        color: rgb(60, 10, 100);
+        margin-top: 100px;
+        justify-self: center;
     }
 
 
