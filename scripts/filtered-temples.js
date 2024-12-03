@@ -118,7 +118,8 @@ const temples = [
 	const templeName = document.createElement('h3');
 	templeName.textContent = temple.templeName;
   
-	const templeLocation = document.createElement('p');   
+	const templeLocation = document.createElement('p');
+	   
   
 	templeLocation.textContent = `Location: ${temple.location}`;
   
