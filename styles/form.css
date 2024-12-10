@@ -81,9 +81,13 @@ label{
     padding: 10px; 
       
 }
-.zone4 input {
+.zone4 textarea {
     height: 200px;
+    width: 96%;
+    margin: 2% auto;
+    border: 1px solid #ddd;
 }
+
 
 
 .zone3 label input {
