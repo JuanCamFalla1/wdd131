@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Juan Falla</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Your Juan Falla  W05 Assignment: Product Review Form Overview
+    Create product review form page using good form design given specific field requirements and submission confirmation with a counter. Ensure that the form is user friendly on both mobile and desktop screens.">
+    <meta name="author" content="Juan Falla">
+    <link rel="stylesheet" href="styles/form.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script defer src="scripts/form.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="reviews.html" class="htform">
+            <fieldset>
+                <div class="zone0">Product Name 
+                <label> <select name="Product" id="pname" required>
+                     <option value="" disabled selected>Select a Product ...</option>
+                    </select>
+                </label>
+                </div>
+                <div class="zone1">Overal Raiting 
+                    <div></div>
+                <label><input type="radio" name="raiting" id="radio" value="1" required>☆</label>
+                <label><input type="radio" name="raiting" id="radio" value="2" required>☆☆</label>
+                <label><input type="radio" name="raiting" id="radio" value="3" required>☆☆☆</label>
+                <label><input type="radio" name="raiting" id="radio" value="4" required>☆☆☆☆</label>
+                <label><input type="radio" name="raiting" id="radio" value="5" required>☆☆☆☆☆</label>
+                </div>
+                <div class="zone2" >Anticipated Completion Date
+                <input type="date" name="completeDate" id="cdate" required>
+                </div>
+                <div class="zone3">Which features did you find useful in the product? (check all that apply)
+                <label> <input type="checkbox" id="chek1" name="Durability" value="yes">Durability</label>
+                <label> <input type="checkbox" id="chek1" name="Ease_Of_use" value="yes">Ease Of use</label>
+                <label> <input type="checkbox" id="chek1" name="Performance" value="yes">Performance</label>
+                <label> <input type="checkbox" id="chek1" name="Design" value="yes">Design</label>
+                </div>
+                <div class="zone4">Written Review <span>(Optional)</span>
+                <label> <input type="textarea" id="texta" name="textarea"></label>
+                </div>
+                <div class="zone5">Your Name <span>(Optional)</span>
+                <label> <input type="text" id="uname" name="textname"></label>                
+                </div>
+                <label><input type="submit" value="Post Review" id="button"></label>
+            </fieldset> 
+        </form>       
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> 😁 Juan Camilo Falla Chavez 😁 Bolivia</p>
+        <p class="color"> Last Modification <span id="lastModified"></span> </p>
+    </footer>
+</body>
+</html> 
