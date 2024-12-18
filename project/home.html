@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Juan Falla</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Your Juan Falla  Project Site Plan - this Website is set to view a city that's often forgotten but its the heart of lationamerica.">
+    <meta name="author" content="Juan Falla">      
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/siteplan-small.css">
+    <script defer src="scripts/siteplan.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    
+    <header> 
+        <div class="pattern">
+            <div class="special-font">
+                <div class="box1">
+                    <img class="logobackground" src="images/taparrabo.png" alt="background-pictures" loading="lazy">
+                </div>
+                <div class="box2">
+                    <h1 > TIQUIPAYA</h1>
+                    <h3>The city between the flowers </h3>
+                </div>
+                <img class="osopictures" src="images/oso.png" alt="Oso-LOGO" loading="lazy">
+            </div>
+
+        </div>
+        
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="history.html">New History</a></li>
+                <li><a href="activities.html">Activities</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <picture>
+                <source srcset="images/Background-tiqui.jpg" media="(min-width: 1000px)" loading="lazy">
+                <img src="images/Background-tiqui-small.jpg" alt="back" loading="lazy">
+            </picture>
+            
+                <div class="card-container">
+                    <table class="data-table table1">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Data</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="data">Area:</td>
+                                <td>187.996,44 km</td>
+                            </tr>
+                            <tr>
+                                <td class="data">Population:</td>
+                                <td>54.000</td>
+                            </tr>
+                            <tr>
+                                <td class="data">Religion:</td>
+                                <td>Catholic</td>
+                            </tr>
+                            <tr>
+                                <td class="data">Languages:</td>
+                                <td>Spanish</td>
+                            </tr>
+                            <tr>
+                                <td class="data">Currency:</td>
+                                <td>Boliviano</td>
+                            </tr>
+                            <tr>
+                                <td class="data">Time Zone:</td>
+                                <td>UTC-4</td>
+                            </tr>
+                            <tr>
+                                <td class="data">Calling Code:</td>
+                                <td>+591</td>
+                            </tr>
+                            <tr>
+                                <td class="data">Internet TLD:</td>
+                                <td>.mg</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+                <div class="card-container">
+                    <table class="data-table table2">
+                        <thead>
+                            <tr>
+                                <th class="weather" colspan="2">Weather</th>                            
+                            </tr>
+                            <tr>
+                                <th  colspan="2"><img class="icon" src="images/1530384_weather_evening_sun_sunset_icon.svg" alt="1530384_weather_evening_sun_sunset_icon"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="data label">Temperature:</td>
+                                <td>31 °C</td>
+                            </tr>
+                            <tr>
+                                <td class="data label">Conditions:</td>
+                                <td>Cloudy</td>
+                            </tr>
+                            <tr>
+                                <td class="data">Wind:</td>
+                                <td>SW 7 km/h</td>
+                            </tr>
+                            <tr>
+                                <td class="data">Wind Chill:</td>
+                            <td class="last-row"><span id="wind"></span></td> 
+                            </tr>                        
+                        </tbody>
+                    </table>
+
+                </div>
+             
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> 😁 Juan Camilo Falla Chavez 😁 Bolivia</p>
+        <p class="color"> Last Modification <span id="lastModified"></span> </p>
+        
+    </footer>
+</body>
+</html> 
