@@ -96,7 +96,6 @@ footer {
 
 .logobackground {
     display: none;
-    background-repeat: repeat x 4;
     opacity: 40%;
 }
 
@@ -165,7 +164,7 @@ footer {
      
     background-image: url("/project/images/taparrabo.png");
     background-size: 150px 120px ;
-    background-repeat: 2;
+    
     
     }
     
