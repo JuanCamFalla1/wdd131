@@ -7,7 +7,7 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Your Juan Falla  Project Site Plan - this Website is set to view a city that's often forgotten but its the heart of lationamerica.">
     <meta name="author" content="Juan Falla">      
     <link rel="stylesheet" href="styles/activities.css">    
-    <script defer src="scripts/siteplan.js"></script>
+    <script defer src="scripts/activities.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
@@ -25,7 +25,7 @@
                     <h1 > TIQUIPAYA</h1>
                     <h3>The city between the flowers </h3>
                 </div>
-                <img class="osopictures" src="images/oso.png" alt="Oso-LOGO">
+                <img class="osopictures" src="images/oso.png" alt="Oso-LOGO" loading="lazy">
             </div>
 
         </div>
@@ -40,9 +40,70 @@
         </nav>
     </header>
     <main>
-        <div>
-            
+        <div class="card-container">
+            <div class="card">
+                <img src="images/activity-1.jpg" alt="SanMiguelCelebtration" loading="lazy">
+                <div class="card-content">
+                    <h3>San Miguel Party</h3>
+                    <p>The San Miguel festival is a vibrant celebration of the city's rich culture. It's a time for comparsas, dances, and beautifully adorned cars as revelers dance through the night in honor of their patron saint.</p>
+                </div>
+                
+            </div>
+
+            <div class="card">
+                <img src="images/activity-2.jpg" alt="Food-Experience" loading="lazy">
+                <div class="card-content">
+                    <h3>Food Expirience</h3>
+                    <p>Chicharrón is the most sought-after delicacy. Before serving, the pork must be seasoned generously with garlic, pepper, cumin, chopped green onion, lemon, oregano, ground aji colorado (a type of chili pepper), and water. It is then cooked in a large pot until it is golden brown</p>
+                </div>
+                
+            </div>
+            <div class="card">
+                <img src="images/activity-3.jpg" alt="Flower-Fair" loading="lazy">
+                
+                <div class="card-content">
+                    <h3>Tiquipaya Flower Fair</h3>
+                    <p>As the name of the city suggests, thanks to its standardized climate throughout the year, the city has ample opportunity for plants to be grown year-round, and in season, their beauty adorns the festivities, where everyone competes to see the most beautiful flowers</p>
+                </div>
+                
+            </div>
+
+            <div class="card">
+                <img src="images/activity-4.jpg" alt="Hiking Apote" loading="lazy">
+                <div class="card-content">
+                    <h3>Apote Cascade Hiking options</h3>
+                    <p>Climbing and outdoor activities such as camping, navigating the beautiful rivers, and enjoying walks on the available routes attract many tourists. The beauty of nature becomes a unique opportunity to enjoy the city's grand opportunities.</p>
+                </div>
+            </div>
+
         </div>
+
+        <form method="get" action="review.html" class="htform">
+            <fieldset>
+                <!-- <div class="zone0">Interest in Traveling 
+                    <label> <select name="Product" id="pname" required>
+                         <option value="" disabled selected>Select a Product ...</option>
+                        </select>
+                    </label>
+                </div>               -->
+                <div class="zone2" >Schedule Travel Date
+                <input type="date" name="completeDate" id="cdate" required>
+                </div>
+                <div class="zone3">Which Activities would you be interested in doing? (check all that apply)
+                <label> <input type="checkbox" id="chek1" name="HikingApoteCascades" value="yes">Hiking / Apote Cascades.</label>
+                <label> <input type="checkbox" id="chek2" name="Foodexperience" value="yes">Food experience.</label>
+                <label> <input type="checkbox" id="chek3" name="SanMiguelCelebration" value="yes">San Miguel Celebration.</label>
+                <label> <input type="checkbox" id="chek4" name="FlowerFair" value="yes">Flower Fair.</label>
+                </div>
+                <div class="zone4">Comments <span>(Optional)</span>
+                <label > <textarea id="texta" name="textarea"></textarea></label>               
+                </div>
+                <div class="zone5">Your Name <span>(Optional)</span>
+                <label> <input type="text" id="uname" name="textname"></label>                
+                </div>
+                <label><input type="submit" value="Set Your Travel" id="button"></label>
+            </fieldset> 
+        </form>   
         
     </main>
     <footer>

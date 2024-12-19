@@ -191,6 +191,11 @@ footer {
     main picture img {
         width: 100%;
     }
+
+    
+
+   
+
 }
 
 /* -------------------------------- cellphone view ------------------- */
@@ -218,9 +223,10 @@ footer {
 
 h2 {
 	font-size: 1.8rem;
-	color: rgb(60, 10, 100);
-	text-align: left;
+	color: rgb(141, 63, 37);
+	text-align: center;
 	margin: 1rem;
+    font-size: 4.5rem;
 }
 
     /* main design*/
@@ -231,29 +237,32 @@ h2 {
 	flex-wrap:wrap;
 	margin-top: 100px;
 }
-.temple {
+.data {
 	width:400px;
-	background-color: #f0f0f0;
+	background-color: rgb(141, 63, 37);
 	border-radius: 8px;
 	overflow:hidden;
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 	margin: 20px;
-	height: 350px;
+	height: 725px;
+    color: white;
 }
 
-.temple img {
+.data img {
 	width: 400px;
 	height: 251px;
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
 }
-.temple-details {
+.data-details {
 	padding: 16px;
 	text-align: center;
+    font-size: 1.8rem;
+    
 }
 
-.temple-details h3 {
-	font-size: 28px;
-	margin-bottom: 8px;
+.data-details h3 {
+	font-size: 38px;
+	margin-bottom: 35px;
 	
 }
 

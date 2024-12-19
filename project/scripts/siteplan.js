@@ -42,130 +42,125 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
+
+
+
 //
 
-const templesContainer = document.querySelector('.history-container');
+const Historycontainer = document.querySelector('.history-container');
 
-const temples = [
+const information = [
 	{
-	  templeName: "Aba Nigeria",
-	  location: "Aba, Nigeria",
-	  dedicated: "2005, August, 7",
-	  area: 11500,
+	  cardname: "Tiquipaya Beggining",
+	  history: "The first indications of the origins of Tiquipaya date back to the 13th century, when the area was habited by Aymara people who lived in settlemens.",
+	  date: "Between the 13th century",
+	  picturename: "Graphics from the past",
 	  imageUrl:
-	  "https://lh3.googleusercontent.com/pMfCzUvnWGL_goMyjh0gS0gg0ux_7DI0aid8ddds3vfShYRA7hHwLE-Aq7CQUrUkTWaWdhLfUDfJveFt3Tsrhaw=w16383"
+	  "https://raw.githubusercontent.com/JuanCamFalla1/wdd131/refs/heads/main/project/images/image-1.jpg"
 	},
 	{
-	  templeName: "Manti Utah",
-	  location: "Manti, Utah, United States",
-	  dedicated: "1888, May, 21",
-	  area: 74792,
+	  cardname: "Stablishment",
+	  history: "in 1957 Tiquipaya was officially designated as a land grant under the name San Miguel de Tiquipaya and was given a specific amount of land to work. (1403.60 km2) ",
+	  date: "1957, Sep, 23",
+	  picturename: "The land to the Future",
 	  imageUrl:
-	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+	  "https://raw.githubusercontent.com/JuanCamFalla1/wdd131/refs/heads/main/project/images/image-5.jpg"
 	},
 	{
-	  templeName: "Payson Utah",
-	  location: "Payson, Utah, United States",
-	  dedicated: "2015, June, 7",
-	  area: 96630,
+	  cardname: "What is known For...",
+	  history: "Tiquipaya is initially known for being a land that calls for adventure; its tourism and gastronomic tradition have left a mark on the culture of its people they enjoy everything that  comes from mother nature. ",
+	  date: "Between the 2000's",
+	  picturename: "Chorizo Sandwich",
 	  imageUrl:
-	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+	  "https://raw.githubusercontent.com/JuanCamFalla1/wdd131/refs/heads/main/project/images/image-3.JPG"
 	},
 	{
-	  templeName: "Yigo Guam",
-	  location: "Yigo, Guam",
-	  dedicated: "2020, May, 2",
-	  area: 6861,
+	  cardname: "Main Town",
+	  history: "The heart of Tiquipaya is its city hall, a reminder of its beginnings and the saints who guide the city, in addition to the beauty of its slogan plus the weather that toghether form this land full of flowers.",
+	  date: "year 2010",
+	  picturename: "San Miguel Angel",
 	  imageUrl:
-	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+	  "https://raw.githubusercontent.com/JuanCamFalla1/wdd131/refs/heads/main/project/images/image-4.jpg"
 	},
 	{
-	  templeName: "Washington D.C.",
-	  location: "Kensington, Maryland, United States",
-	  dedicated: "1974, November, 19",
-	  area: 156558,
+	  cardname: "Now ",
+	  history: "Among the most important activities in Tiquipaya are the celebration of Saint Michael the Archangel , the Trout Fair , and the Flower Fair. all of them yearly expiriencies to enjoy",
+	  date: "Dates back to their origins",
+	  picturename: "vanilla ice cream",
 	  imageUrl:
-	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+	  "https://raw.githubusercontent.com/JuanCamFalla1/wdd131/refs/heads/main/project/images/image-2.JPG"
 	},
 	
-	// Add more temple objects here...
+	// Add more data objects here...
   ];
 
-  function createTempleElement(temple) {
+  function createDataElement(data) {
 	
-	const templeElement = document.createElement('div');
-	templeElement.classList.add('temple');
+	const dataElement = document.createElement('div');
+	dataElement.classList.add('data');
   
-	const templeImage = document.createElement('img');
-	templeImage.src = temple.imageUrl;
-	templeImage.alt = temple.templeName;
-	templeImage.setAttribute ("loading", "lazy");
+	const dataImage = document.createElement('img');
+	dataImage.src = data.imageUrl;
+	dataImage.alt = data.dataName;
+	dataImage.setAttribute ("loading", "lazy");
   
-	const templeDetails = document.createElement('div');
-	templeDetails.classList.add('temple-details');
+	const dataDetails = document.createElement('div');
+	dataDetails.classList.add('data-details');
   
-	const templeName = document.createElement('h3');
-	templeName.textContent = temple.templeName;
+	const dataName = document.createElement('h3');
+	dataName.textContent = data.cardname;
   
-	const templeLocation = document.createElement('p');
+	const dataLocation = document.createElement('p');
 	   
   
-	templeLocation.textContent = `Location: ${temple.location}`;
+	dataLocation.textContent = ` ${data.history}`;
   
-	const templeDedicated = document.createElement('p');
-	templeDedicated.textContent = `Dedicated: ${temple.dedicated}`;
+	const dataDedicated = document.createElement('p');
+	dataDedicated.textContent = `Date: ${data.date}`;
   
-	const templeArea = document.createElement('p');
-	templeArea.textContent = `Area: ${temple.area} sq ft`;
+	const dataArea = document.createElement('p');
+	dataArea.textContent = `Picture: ${data.picturename}`;
   
-	templeDetails.appendChild(templeName);
-	templeDetails.appendChild(templeLocation);
-	templeDetails.appendChild(templeDedicated);
-	templeDetails.appendChild(templeArea);
-	templeElement.appendChild(templeDetails);
-	templeElement.appendChild(templeImage);
+	dataDetails.appendChild(dataName);
+	dataDetails.appendChild(dataLocation);
+	dataDetails.appendChild(dataDedicated);
+	dataDetails.appendChild(dataArea);
+	dataElement.appendChild(dataDetails);
+	dataElement.appendChild(dataImage);
 	
   
-	return templeElement;
+	return dataElement;
   }
   
-  function filterTemples(filterType) {
-    templesContainer.innerHTML = ''; 
+  function filterDatas(filterType) {
+    Historycontainer.innerHTML = ''; 
 
-    const filteredTemples = temples.filter(temple => {
+    const filteredDatas = information.filter(data => {
         switch (filterType) {
             case 'all':
                 return true;
             case 'old':                
-                return new Date(temple.dedicated) < new Date('1990-01-01'); 
+                return new Date(data.dedicated) < new Date('1990-01-01'); 
             case 'new':                
-                return new Date(temple.dedicated) > new Date('2010-01-01'); 
+                return new Date(data.dedicated) > new Date('2010-01-01'); 
             case 'large':
-                return temple.area > 90000; 
+                return data.area > 90000; 
             case 'small':
-                return temple.area < 15000; 
+                return data.area < 15000; 
             default:
                 return true; 
         }
     });
 
-    filteredTemples.forEach(temple => {
-        const templeElement = createTempleElement(temple);
-        templesContainer.appendChild(templeElement);
+    filteredDatas.forEach(data => {
+        const dataElement = createDataElement(data);
+        Historycontainer.appendChild(dataElement);
     });
 }
 
 
-filterTemples('all');
-
-
-const navigationLinks = document.querySelectorAll('.navigation a');
-navigationLinks.forEach(link => {
-    link.addEventListener('click',   
- () => {
-        const filterType = link.id.split('-')[0];
-        filterTemples(filterType);
-    });
-});
+filterDatas('all');
 
 
